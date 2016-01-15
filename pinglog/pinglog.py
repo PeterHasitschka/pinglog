@@ -8,9 +8,9 @@ class PingLog:
     def __init__(self, file):
 
         self.execcmd = "sudo ping -c {count} {host} -i {interval_sec} -W {timeout_sec}".format(
-                count=2,
+                count=5,
                 host='www.google.com',
-                interval_sec=1,
+                interval_sec=5,
                 timeout_sec=10
         )
 
