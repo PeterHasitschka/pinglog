@@ -7,7 +7,7 @@ import datetime
 class PingLog:
     def __init__(self, file):
 
-        self.execcmd = "ping -c {count} {host} -i {interval_sec} -W {timeout_sec}".format(
+        self.execcmd = "sudo ping -c {count} {host} -i {interval_sec} -W {timeout_sec}".format(
                 count=2,
                 host='www.google.com',
                 interval_sec=1,
